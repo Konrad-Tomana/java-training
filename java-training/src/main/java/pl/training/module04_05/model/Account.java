@@ -1,4 +1,4 @@
-package pl.training.module04_05_06;
+package pl.training.module04_05.model;
 
 import java.util.Objects;
 
@@ -7,9 +7,9 @@ public class Account {
     private final String number;
     private Money balance;
 
-    public Account(Money balance, String number) {
-        this.balance = balance;
+    public Account(String number, Money balance) {
         this.number = number;
+        this.balance = balance;
     }
 
     public void deposit(Money amount) {
@@ -22,7 +22,7 @@ public class Account {
     }
 
     private void checkBalance(Money amount) throws InsufficientFundsException {
-        if (balance.isGreaterOrEqual(amount)) {
+        if (amount.isGreaterOrEqual(balance)) {
             throw new InsufficientFundsException();
         }
     }
@@ -35,7 +35,7 @@ public class Account {
         return balance;
     }
 
-    public boolean hasNumber(String number){
+    public boolean hasNumber(String number) {
         return this.number.equals(number);
     }
 
