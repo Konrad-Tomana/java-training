@@ -8,7 +8,7 @@ public class TicTacToe {
     private static final byte PLAYER_X = 1;
     private static final byte PLAYER_O = 2;*/
 
-    private enum FieldValue { X, O, EMPTY }
+    private enum FieldValue {X, O, EMPTY}
     private static final int[][] winningSequences = {
             {0, 1, 2}, // top row
             {3, 4, 5}, // middle row
@@ -122,5 +122,4 @@ public class TicTacToe {
     public boolean isGameOver() {
         return isGameOver;
     }
-
 }
