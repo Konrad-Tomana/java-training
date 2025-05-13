@@ -11,5 +11,4 @@ public interface AccountRepository {
     Account[] findAll();
 
     Optional<Account> findByNumber(String number);
-
 }

@@ -15,5 +15,4 @@ public class AccountNotFoundException extends Exception {
     public String getAccountNumber() {
         return accountNumber;
     }
-
 }

@@ -16,5 +16,4 @@ public final class PremiumAccount extends Account {
     public boolean hasDebit() {
         return balance.value().signum() < 0;
     }
-
 }

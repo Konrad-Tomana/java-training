@@ -9,5 +9,4 @@ public interface AccountRepository {
     Account[] findAll();
 
     Account findByNumber(String number);
-
 }

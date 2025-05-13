@@ -41,5 +41,4 @@ public class ArrayAccountRepository implements AccountRepository {
         }
         return null;
     }
-
 }
