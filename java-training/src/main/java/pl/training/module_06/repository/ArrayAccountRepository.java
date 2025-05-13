@@ -2,6 +2,8 @@ package pl.training.module_06.repository;
 
 import pl.training.module_06.model.Account;
 
+import java.util.Optional;
+
 public class ArrayAccountRepository implements AccountRepository {
 
     private static final int SIZE_MULTIPLIER = 2;
@@ -32,14 +34,14 @@ public class ArrayAccountRepository implements AccountRepository {
     }
 
     @Override
-    public Account findByNumber(String number) {
+    public Optional<Account> findByNumber(String number) {
         for (int currentIndex = 0; currentIndex < index; currentIndex++) {
             var account = accounts[currentIndex];
             if (account.hasNumber(number)) {
-                return account;
+                return Optional.of(account);
             }
         }
-        return null;
+        return Optional.empty();
     }
 
 }
