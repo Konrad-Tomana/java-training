@@ -1,10 +1,10 @@
-package pl.training.module04_05;
+package pl.training.module_06;
 
-import pl.training.module04_05.model.Account;
-import pl.training.module04_05.model.Currency;
-import pl.training.module04_05.model.InsufficientFundsException;
-import pl.training.module04_05.model.Money;
-import pl.training.module04_05.repository.AccountRepository;
+import pl.training.module_06.model.Account;
+import pl.training.module_06.model.Currency;
+import pl.training.module_06.model.InsufficientFundsException;
+import pl.training.module_06.model.Money;
+import pl.training.module_06.repository.AccountRepository;
 
 public class BankService {
 
@@ -36,11 +36,8 @@ public class BankService {
     }
 
     private Account getAccount(String accountNumber) throws AccountNotFoundException {
-        var account = repository.findByNumber(accountNumber);
-        if (account == null) {
-            throw new AccountNotFoundException(accountNumber);
-        }
-        return account;
+        return repository.findByNumber(accountNumber)
+                .orElseThrow(() -> new AccountNotFoundException(accountNumber));
     }
 
     public void transfer(String fromAccountNumber, String toAccountNumber, Money amount) throws InsufficientFundsException, AccountNotFoundException {

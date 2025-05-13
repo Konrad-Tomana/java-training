@@ -1,4 +1,4 @@
-package pl.training.module04_05.model;
+package pl.training.module_06.model;
 
 public enum Currency {
 

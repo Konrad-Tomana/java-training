@@ -1,6 +1,6 @@
-package pl.training.module04_05.repository;
+package pl.training.module_06.repository;
 
-import pl.training.module04_05.model.Account;
+import pl.training.module_06.model.Account;
 
 public interface AccountRepository {
 

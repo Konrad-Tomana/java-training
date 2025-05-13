@@ -1,8 +1,8 @@
-package pl.training.module04_05;
+package pl.training.module_06;
 
-import pl.training.module04_05.model.*;
-import pl.training.module04_05.repository.AccountRepository;
-import pl.training.module04_05.repository.ArrayAccountRepository;
+import pl.training.module_06.model.*;
+import pl.training.module_06.repository.AccountRepository;
+import pl.training.module_06.repository.ArrayAccountRepository;
 
 public class Application {
 
