@@ -1,21 +1,22 @@
 package pl.training.module06_07.examples;
 
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Generics {
 
     public static void main(String[] args) {
-/*        List list = new ArrayList();
+        /*List list = new ArrayList();
         list.add("Hello");
         list.add(10); // No type checking at compile time!
 
         String str = (String) list.get(0); // Works fine
         String num = (String) list.get(1); // ClassCastException at runtime!*/
 
-/*        List<String> list = new ArrayList<>();
+        /*List<String> list = new ArrayList<>();
         list.add("Hello");
-        //list.add(10); // Compile-time error!
+        // list.add(10); // Compile-time error!
 
         String str = list.get(0); // No need for explicit casting
         System.out.println(str);*/
@@ -24,7 +25,7 @@ public class Generics {
         intBox.set(100);
         System.out.println(intBox.get());
 
-        var strBox = new Wrapper<>();
+        var strBox = new Wrapper<String>();
         strBox.set("Hello Generics");
         System.out.println(strBox.get());
 
