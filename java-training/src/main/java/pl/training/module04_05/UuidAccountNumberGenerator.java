@@ -8,4 +8,5 @@ public class UuidAccountNumberGenerator implements AccountNumberGenerator {
     public String next() {
         return UUID.randomUUID().toString();
     }
+
 }

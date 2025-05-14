@@ -6,16 +6,15 @@ public class PrimitiveTypes {
         // nazwa_typu nazwa_zmiennej [= wartość];
 
         boolean isValid = true;
-        System.out.println("Is Valid: " + isValid);
+        System.out.println("Is valid: " + isValid);
         int age;
-        //System.out.println( "Age: " + age); //błąd kompilacji -nieprzypisana zmienna
+        // System.out.println("Age: " + age); // błąd kompilacji - zmienna nie ma przypisanej wartości
 
-        long id = 1_000_000_000; //int mieści się w long, podkreslenie jest ignorowane
-        // int value = id; //long nie mieści się w int
-        int myValue = (int) id; //jawna konwersja z potencjalnym ryzykiem utraty informacji
+        long id = 1_000_000_000; // int mieści się long, podkreślenie jest ignorowane
+        // int value = id; // long nie mieści się w int
+        int myValue = (int) id; // jawna konwersja z potencjalnym ryzykiem utraty informacji
 
         float result = 10.13F; // jawne wskazanie typu literału
-
-
     }
+
 }

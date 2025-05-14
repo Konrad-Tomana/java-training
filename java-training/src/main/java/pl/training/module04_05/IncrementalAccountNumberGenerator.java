@@ -8,4 +8,5 @@ public class IncrementalAccountNumberGenerator implements AccountNumberGenerator
     public String next() {
         return "" + ++counter;
     }
+
 }

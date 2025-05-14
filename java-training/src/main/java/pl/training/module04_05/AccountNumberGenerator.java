@@ -7,4 +7,5 @@ public interface AccountNumberGenerator {
     default String getVersion() {
         return "1.0.0";
     }
+
 }

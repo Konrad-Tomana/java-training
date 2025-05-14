@@ -34,4 +34,5 @@ public record Money(BigDecimal value, Currency currency) {
             throw new IllegalArgumentException("Currency mismatch");
         }
     }
+
 }

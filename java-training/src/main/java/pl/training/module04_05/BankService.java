@@ -62,4 +62,5 @@ public class BankService {
         }
         System.out.println("Total balance: " + totalBalance);
     }
+
 }

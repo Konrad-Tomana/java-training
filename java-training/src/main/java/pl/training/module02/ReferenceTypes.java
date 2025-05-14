@@ -8,7 +8,7 @@ public class ReferenceTypes {
         String lastName = new String("Smith"); // new zawsze wymusza alokację pamięci
 
         int age = 6;
-        String text = "Ala ma " + age + " lat.";
+        String text = "Ala ma " + age + " lat";
         System.out.println(text);
 
         int firstValue = 1;
@@ -17,30 +17,30 @@ public class ReferenceTypes {
         System.out.println("Result: " + (firstValue + secondValue));
         System.out.println(firstValue + secondValue + " is result");
 
-        Account firstAccount = new Account(); //domyślny konstruktor, wygenerowany automatycznie
+        Account firstAccount = new Account(); // domyślny konstruktor, wygenerowany automatycznie
         firstAccount.number = "123456789";
-        System.out.println("First account numer: " + firstAccount.number);
-        firstAccount.printBalance();
+        System.out.println("First account number: " + firstAccount.number);
         Account myAccount = firstAccount;
-        System.out.println("My account account numer: " + myAccount.number);
+        System.out.println("My account number: " + myAccount.number);
 
         Account secondAccount = new Account();
-        secondAccount.number = "111111111";
-        System.out.println("Second account numer: " + secondAccount.number);
+        secondAccount.number = "11111111";
+        System.out.println("Second account number: " + secondAccount.number);
         secondAccount.deposit(1_000);
         secondAccount.withdraw(500);
         secondAccount.printBalance();
 
-        ReferenceTypes referenceTypes = new ReferenceTypes();
+        var referenceTypes = new ReferenceTypes();
+
         int score = 5;
-        int myScore = score;
+        int myScore = score; // utworzenie kopii zmiennej
         myScore = myScore + 1;
-        referenceTypes.passByValues(score);
+        referenceTypes.passByValue(score);
         System.out.println("Score: " + score);
         System.out.println("My score: " + myScore);
 
         Account testAccount = new Account();
-//        Account testAccount2 = testAccount; //Utworzenie kopii referencji do obiekt
+        // Account testAccount2 = testAccount; // utworzenie kopii referencji do obiektu
         referenceTypes.passByReference(testAccount);
         System.out.println("Account balance: " + testAccount.balance);
 
@@ -49,17 +49,20 @@ public class ReferenceTypes {
             testAccount.deposit(100);
         }
 
-        var user = new User("Janek", "Nowak", 19);
+        var user = new User("John", "Smith", 25);
         user.printInfo();
+
+
     }
 
-    public void passByValues(int value) {   //przekazanie kopii zmiennej
-        value = value + 1; //zwykle nie jest dobrą praktyką modyfikowanie otrzymanych parametrów
+    public void passByValue(int value) { // przekazanie kopii zmiennej
+        value = value + 1; // zwykle nie jest dobrą praktyką modyfikowanie otrzymanych parametrów
         System.out.println("Value: " + value);
     }
 
-    public void passByReference(Account account) {  //przekazanie kopii referencji do obiektu
+    public void passByReference(Account account) { // przekazanie kopii referencji do obiektu
         account.deposit(500);
-        System.out.println("Amount balance: " + account.balance);
+        System.out.println("Account balance: " + account.balance);
     }
+
 }

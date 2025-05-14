@@ -3,12 +3,12 @@ package pl.training.module02;
 public class Account {
 
     String number = "";
-    double balance; //domyślnie 0.0
-    boolean isActive;   //false domyślnie
+    double balance; // domyślnie 0.0
+    boolean isActive; // domyślnie false
 
-/*    public Account() {
+    /*public Account() {
         isActive = true;
-        System.out.println("Ne account was created");
+        System.out.println("New account created");
     }*/
 
     public void deposit(double amount) {
@@ -22,4 +22,5 @@ public class Account {
     public void printBalance() {
         System.out.println("Balance: " + balance);
     }
+
 }

@@ -54,4 +54,5 @@ public class Application {
             System.out.println(premiumAccount.hasDebit());
         }
     }
+
 }
