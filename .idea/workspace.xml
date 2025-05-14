@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b9a1884-a94b-4713-bac0-fd5fa9b81c6b" name="Changes" comment="day 3 - threads">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/java-training2.iml" beforeDir="false" />
-    </list>
+    <list default="true" id="2b9a1884-a94b-4713-bac0-fd5fa9b81c6b" name="Changes" comment="day 3 - the end" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,6 +46,7 @@
     "Application.Application.executor": "Run",
     "Application.Generics.executor": "Run",
     "Application.pl.training.module04_05.Application.executor": "Run",
+    "Application.pl.training.module07.Application (1).executor": "Run",
     "Application.pl.training.module07.Application.executor": "Run",
     "Application.pl.training.module08.creating_threads.Application.executor": "Run",
     "Application.pl.training.module08.joining_threads.Application.executor": "Run",
@@ -62,7 +57,12 @@
     "last_opened_file_path": "C:/TEST-REPO/repo"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Application">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\TEST-REPO\repo\java-training\.idea" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.pl.training.module08.joining_threads.Application">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.training.module06.Application" />
       <module name="java-training" />
@@ -130,10 +130,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.pl.training.module08.joining_threads.Application" />
         <item itemvalue="Application.Application" />
         <item itemvalue="Application.pl.training.module07.Application (1)" />
         <item itemvalue="Application.pl.training.module08.creating_threads.Application" />
-        <item itemvalue="Application.pl.training.module08.joining_threads.Application" />
         <item itemvalue="Application.pl.training.module07.Application" />
       </list>
     </recent_temporary>
@@ -202,7 +202,23 @@
       <option name="project" value="LOCAL" />
       <updated>1747231517004</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="day 3 - the end">
+      <option name="closed" value="true" />
+      <created>1747232250123</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1747232250123</updated>
+    </task>
+    <task id="LOCAL-00009" summary="day 3 - the end">
+      <option name="closed" value="true" />
+      <created>1747232262477</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1747232262477</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -223,6 +239,7 @@
     <MESSAGE value="day 3 - module 7 i 8" />
     <MESSAGE value="day 3 - JsonXmlconverter" />
     <MESSAGE value="day 3 - threads" />
-    <option name="LAST_COMMIT_MESSAGE" value="day 3 - threads" />
+    <MESSAGE value="day 3 - the end" />
+    <option name="LAST_COMMIT_MESSAGE" value="day 3 - the end" />
   </component>
 </project>
