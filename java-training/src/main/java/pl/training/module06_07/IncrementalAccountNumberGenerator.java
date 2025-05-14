@@ -1,4 +1,4 @@
-package pl.training.module_06;
+package pl.training.module06_07;
 
 public class IncrementalAccountNumberGenerator implements AccountNumberGenerator {
 
